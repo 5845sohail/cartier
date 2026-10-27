@@ -1,0 +1,9 @@
+:focus-visible { outline: 2px solid #ba001c; outline-offset: 5px; }
+#collection, #categories, #mobile-categories, #footer { scroll-margin-top: 80px; }
+.w-webflow-badge { display:none!important; }
+[role="button"] { cursor:pointer; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior:auto; }
+  .super-text-hero, .super-text-pop { animation:none!important; }
+  .intro-loader { display:none!important; }
+}
