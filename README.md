@@ -1,19 +1,58 @@
-# Cartier watch motion recreation
+# Cartier watch showcase
 
-A responsive, locally bundled recreation of https://cartier-watches.webflow.io/ by Joseph Berry, built for the supplied reference request. Public reference visuals, fonts, markup, styles, and Webflow interaction runtime are preserved to reproduce the actual motion instead of approximating it. Asset URLs are recorded in `asset-map.json`. `motion-config.json` is the readable original interaction configuration.
+A static, responsive recreation of the [Cartier Webflow reference](https://cartier-watches.webflow.io/) by Joseph Berry. It includes the three-scene hero, product carousels, editorial image reveals, category sequence, feature panel, and footer motion.
 
-Run `python3 -m http.server 4317 --directory dist` and open http://localhost:4317. No installation or build is required. Deployment uses `.openai/hosting.json`.
+## Run locally
 
-## Motion analysis
+From this folder:
 
-- A branded intro loader wipes away before the hero rises into view.
-- The hero cycles through three layered scenes every 4,000 ms. Incoming and outgoing scenery and watch panels move and scale independently over 1,600 ms using `inOutQuint` easing; the background scales to 1.15 during exit. Large italic text moves behind the watch panel.
-- Scroll-linked hero movement and editorial image reveals retain the reference keyframes. The apparent 3D look combines translate3d, scaling, layered clipping, and perspective; there is no WebGL model to rotate freely.
-- The product carousel uses Splide 3.2.2, 800 ms slide transitions, drag interaction, and responsive per-page counts of 4 / 2 / 1.5.
-- The desktop category scene pins its layout while scroll advances through three watch compositions. Mobile replaces it with stacked image and description sections.
-- Product hover scaling, menu expansion, feature side panel, testimonial slider, footer reveal, and pointer-following final watch are retained.
-- Original breakpoints: desktop >=992px; tablet 768–991px; small 480–767px; portrait <=479px.
+```sh
+npm start
+```
 
-## Boundaries
+Open **http://127.0.0.1:4317**. Node.js and Python 3 are required for the provided commands. There are no packages to install and no build step. You can also serve the folder directly with `python3 -m http.server 4317`.
 
-This is an independent visual study, not an official Cartier store. Sample product prices and testimonial copy are carried over from the reference. Checkout, orders, careers, contact service, and newsletter delivery have no backend. Newsletter submission explicitly displays a preview-only message and sends no data. Navigation and shopping CTAs link to the relevant page sections. No credentials or screen recording are included in the deployed site.
+## Project layout
+
+```text
+index.html                Page markup, grouped by section
+css/
+  styles.css              Layout, typography, components, and breakpoints
+  global.css              Fluid sizing and page-wide presentation
+  carousel.css            Product carousel styling
+  animation-states.css    Initial states before animations start
+  accessibility.css       Focus and reduced-motion adjustments
+  startup.css             Black loading screen and first-paint hero states
+js/
+  main.js                 Navigation, keyboard controls, and newsletter demo
+  carousel.js             Shared product carousel options
+  animations.js           Editable motion timelines and initialization
+  detect-browser.js       Early browser capability classes
+  startup.js              Logo fade, curtain reveal, and hero entrance
+assets/
+  images/                 Watch photos, cutouts, and responsive variants
+  icons/                  Logo, controls, and browser icons
+  fonts/                  Local display and body fonts
+  video/                  Watch film and poster
+vendor/                   Third-party runtime and base styles
+scripts/check-assets.py   Local file and animation-binding checks
+docs/                     Motion notes and asset attribution
+```
+
+## Editing
+
+- Change content and section order in `index.html`.
+- Edit layouts and responsive rules in `css/styles.css`; page-wide type sizing lives in `css/global.css`.
+- Adjust carousel speed and visible card counts in `js/carousel.js`.
+- Update page behavior in `js/main.js`.
+- Adjust the opening sequence using the named timing values in `js/startup.js`. Its first-paint states live in `css/startup.css`.
+- Motion is defined in `js/animations.js`. Keep the `data-w-id` attributes and animation selector classes in the HTML: the timelines bind to them. Inline transform styles are intentional starting states, not leftover layout styling.
+- Leave `vendor/` unchanged unless upgrading a library. Minified vendor code is separate from the readable site code.
+
+Run `npm run check` after moving files or editing scripts. Source formatting follows `.prettierrc.json`; Prettier is optional and isn't required to run the site.
+
+## Demo boundaries
+
+This is an independent visual study, not an official Cartier store. Sample prices and testimonial content come from the reference. Checkout, order tracking, careers, and customer service have no backend. Newsletter submission displays a preview message and sends no email address anywhere.
+
+All runtime assets are local. See [asset sources](docs/asset-sources.json) and [motion notes](docs/motion.md) for the reference details. No hosting configuration or deployment tooling is included.

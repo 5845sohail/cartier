@@ -1,0 +1,11 @@
+{
+  "name": "cartier-watch-showcase",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Responsive watch showcase with layered hero motion and scroll-driven animation.",
+  "scripts": {
+    "start": "python3 -m http.server 4317 --bind 127.0.0.1",
+    "dev": "npm start",
+    "check": "python3 scripts/check-assets.py && node --check js/main.js && node --check js/carousel.js && node --check js/detect-browser.js && node --check js/animations.js && node --check js/startup.js"
+  }
+}

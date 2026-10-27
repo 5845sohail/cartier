@@ -1,0 +1,73 @@
+/* Initial states applied before the motion engine starts. */
+@media (min-width: 992px) {
+  html.w-mod-js:not(.w-mod-ix) [data-w-id='354d2693-8cfc-356b-eea1-4172a3d9a18a'] {
+    -webkit-transform: translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(45deg)
+      skew(0, 0);
+    -moz-transform: translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(45deg)
+      skew(0, 0);
+    -ms-transform: translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(45deg)
+      skew(0, 0);
+    transform: translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);
+  }
+  html.w-mod-js:not(.w-mod-ix) [data-w-id='eac5a87b-3b1e-f020-144e-110357a16f73'] {
+    -webkit-transform: translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(45deg)
+      skew(0, 0);
+    -moz-transform: translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(45deg)
+      skew(0, 0);
+    -ms-transform: translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(45deg)
+      skew(0, 0);
+    transform: translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);
+  }
+  html.w-mod-js:not(.w-mod-ix) [data-w-id='fcdfd75b-6268-ef74-ac14-2feb863004c8'] {
+    -webkit-transform: translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(45deg)
+      skew(0, 0);
+    -moz-transform: translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(45deg)
+      skew(0, 0);
+    -ms-transform: translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(45deg)
+      skew(0, 0);
+    transform: translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);
+  }
+  html.w-mod-js:not(.w-mod-ix) [data-w-id='d35934c6-1747-9293-5284-0344152e45ca'] {
+    width: 50%;
+    height: 100%;
+  }
+  html.w-mod-js:not(.w-mod-ix) [data-w-id='eb68b109-b37d-d55f-cfbd-107c5a7bfaf3'] {
+    opacity: 0;
+  }
+  html.w-mod-js:not(.w-mod-ix) [data-w-id='27766a12-7499-8d4d-59cc-471b47d577e7'] {
+    opacity: 1;
+    -webkit-transform: translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
+      skew(0, 0);
+    -moz-transform: translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
+      skew(0, 0);
+    -ms-transform: translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
+      skew(0, 0);
+    transform: translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+  }
+  html.w-mod-js:not(.w-mod-ix) [data-w-id='0ca5e30d-1e48-83a6-705c-84a27eba123b'] {
+    -webkit-transform: translate3d(0, -100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
+      skew(0, 0);
+    -moz-transform: translate3d(0, -100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
+      skew(0, 0);
+    -ms-transform: translate3d(0, -100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
+      skew(0, 0);
+    transform: translate3d(0, -100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+    display: none;
+  }
+  html.w-mod-js:not(.w-mod-ix) [data-w-id='b6958f48-3387-6116-6645-7dd85776fb65'] {
+    opacity: 0;
+  }
+  html.w-mod-js:not(.w-mod-ix) [data-w-id='f0119eba-fb33-9b78-34a6-912f41b88de5'] {
+    opacity: 0;
+    display: none;
+  }
+  html.w-mod-js:not(.w-mod-ix) [data-w-id='b6958f48-3387-6116-6645-7dd85776fb6e'] {
+    opacity: 0;
+  }
+  html.w-mod-js:not(.w-mod-ix) [data-w-id='b6958f48-3387-6116-6645-7dd85776fb77'] {
+    opacity: 0;
+  }
+  html.w-mod-js:not(.w-mod-ix) [data-w-id='b6958f48-3387-6116-6645-7dd85776fb80'] {
+    opacity: 0;
+  }
+}

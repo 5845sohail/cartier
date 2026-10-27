@@ -1,0 +1,29 @@
+/* Product carousel overrides. */
+
+.splide__track {
+  overflow: visible;
+}
+.splide__arrows {
+  display: none;
+}
+.splide__pagination {
+  display: block !important;
+  text-align: center;
+}
+.splide__pagination__page.is-active {
+  background-color: #1779f6;
+  opacity: 1;
+}
+.splide__pagination__page {
+  transform: scale(0.7);
+  width: 0px;
+  height: 12px;
+  border-radius: 100px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 2rem;
+  background-color: #242022;
+  opacity: 0.2;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}

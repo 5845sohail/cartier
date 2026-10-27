@@ -1,0 +1,35 @@
+/* First-paint states: the page stays behind the black curtain until the reveal. */
+.is-starting,
+.is-starting body {
+  overflow: hidden;
+}
+
+.is-starting .intro-loader {
+  display: flex;
+  height: 100%;
+  height: 100dvh;
+  transform: translateY(0);
+}
+
+.intro-logo {
+  width: 128px;
+  height: 36px;
+  opacity: 0;
+}
+
+.is-starting .full-slider {
+  transform: translateY(50%);
+}
+
+.is-starting .hero-title {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .is-starting .full-slider {
+    transform: none;
+  }
+  .is-starting .hero-title {
+    opacity: 1;
+  }
+}
